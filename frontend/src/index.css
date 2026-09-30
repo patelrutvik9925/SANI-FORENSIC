@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cyber-bg text-cyber-text font-sans antialiased selection:bg-cyber-accent selection:text-black;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom forensic terminal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070b14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a243b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a3b5c;
+}
